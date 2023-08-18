@@ -24,7 +24,4 @@ public class MyStepdefs {
         System.out.println("d");
     }
 
-    @And("Welcome")
-    public void welcome() {
-    }
 }
