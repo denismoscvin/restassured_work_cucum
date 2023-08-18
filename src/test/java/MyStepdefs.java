@@ -23,4 +23,8 @@ public class MyStepdefs {
     public void cardsAreDisplayed() {
         System.out.println("d");
     }
+
+    @And("Welcome")
+    public void welcome() {
+    }
 }
