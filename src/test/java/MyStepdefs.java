@@ -1,7 +1,9 @@
+import cucumber.api.junit.Cucumber;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.runner.RunWith;
 
 public class MyStepdefs {
     @Given("User is in NetBanking Landing page")
@@ -24,4 +26,7 @@ public class MyStepdefs {
         System.out.println("d");
     }
 
+    @When("User login into application with login {string} and password {string}")
+    public void userLoginIntoApplicationWithLoginAndPassword(String arg0, String arg1) {
+    }
 }
