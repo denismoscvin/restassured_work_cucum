@@ -11,9 +11,10 @@ public class MyStepdefs {
         System.out.println("a");
     }
 
-    @When("User login into application with username and password")
-    public void userLoginIntoApplicationWithUsernameAndPassword() {
-        System.out.println("b");
+    @When("User login into application with login {string} and password {string}")
+    public void userLoginIntoApplicationWithLoginAndPassword(String arg0, String arg1) {
+        System.out.println(arg0);
+        System.out.println(arg1);
     }
 
     @Then("Home page is populated")
@@ -26,7 +27,4 @@ public class MyStepdefs {
         System.out.println("d");
     }
 
-    @When("User login into application with login {string} and password {string}")
-    public void userLoginIntoApplicationWithLoginAndPassword(String arg0, String arg1) {
-    }
 }
