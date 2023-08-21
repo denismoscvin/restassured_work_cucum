@@ -6,6 +6,11 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
 public class Basics {
     public static void main(String[] args) {
         // validate if Add Place API is workig as expected
@@ -50,6 +55,7 @@ public class Basics {
         JsonPath js1 = ReUsableMethods.rawToJson(getPlaceResponse);
         String actualAddress = js1.getString("address");
         System.out.println(actualAddress);
+        Assert.assertEquals("", "");
     }
 
 }

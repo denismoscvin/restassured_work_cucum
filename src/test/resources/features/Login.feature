@@ -1,12 +1,12 @@
 Feature: Application Login
 
-  Scenario: Home Page default login
+  Scenario: Home Page default login "jin"
     Given User is in NetBanking Landing page
     When User login into application with login "jin" and password "1234"
     Then Home page is populated
     And Cards are displayed
 
-  Scenario: Home Page default login
+  Scenario: Home Page default login "john"
     Given User is in NetBanking Landing page
     When User login into application with login "john" and password "4321"
     Then Home page is populated
