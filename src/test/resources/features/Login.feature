@@ -14,6 +14,13 @@ Feature: Application Login
 
 #Feature: Login Functionality
 #
+#  Scenario: Login with valid username
+#    Given the user is on the login page
+#    When the user enters an valid username
+#    And enters a valid password
+#    And clicks the "Login" button
+#    Then the page "Dashboard" is opened
+#
 #  Scenario: Login with invalid username
 #    Given the user is on the login page
 #    When the user enters an invalid username

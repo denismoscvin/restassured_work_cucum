@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 public class Basics {
     public static void main(String[] args) {
-        // validate if Add Place API is workig as expected
+        // validate if Add Place API is working as expected
         //Add place-> Update Place with New Address -> Get Place to validate if New address is present in response
 
         //given - all input details
@@ -22,7 +22,6 @@ public class Basics {
                 .body(payload.AddPlace()).when().post("maps/api/place/add/json")
                 .then().assertThat().statusCode(200).body("scope", equalTo("APP"))
                 .header("server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
-
 
         System.out.println(response);
         JsonPath js = new JsonPath(response); //for parsing Json
@@ -54,5 +53,4 @@ public class Basics {
         System.out.println(actualAddress);
         Assert.assertEquals("", "");
     }
-
 }
