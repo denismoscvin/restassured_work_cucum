@@ -12,16 +12,31 @@ Feature: Application Login
     Then Home page is populated
     And Cards are displayed
 
-#  Scenario: Successful Login
-#    Given the user is on the login page
-#    When the user enters valid credentials (username and password)
-#    And clicks the login button
-#    Then the user should be redirected to the dashboard page
-#    And a welcome message should be displayed
+#Feature: Login Functionality
 #
-#  Scenario: Unsuccessful Login (Negative Testing)
+#  Scenario: Login with invalid username
 #    Given the user is on the login page
-#    When the user enters invalid credentials (incorrect username or password)
-#    And clicks the login button
-#    Then an error message should be displayed
-#    And the user should remain on the login page
+#    When the user enters an invalid username
+#    And enters a valid password
+#    And clicks the "Login" button
+#    Then the user should see an error message
+#
+#  Scenario: Login with invalid password
+#    Given the user is on the login page
+#    When the user enters a valid username
+#    And enters an invalid password
+#    And clicks the "Login" button
+#    Then the user should see an error message
+#
+#  Scenario: Login with both invalid username and password
+#    Given the user is on the login page
+#    When the user enters an invalid username
+#    And enters an invalid password
+#    And clicks the "Login" button
+#    Then the user should see an error message
+#
+#  Scenario: Login with empty fields
+#    Given the user is on the login page
+#    When the user leaves both username and password fields empty
+#    And clicks the "Login" button
+#    Then the user should see an error message
