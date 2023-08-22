@@ -40,3 +40,4 @@ Feature: Application Login
 #    When the user leaves both username and password fields empty
 #    And clicks the "Login" button
 #    Then the user should see an error message
+
