@@ -6,9 +6,6 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-import org.testng.Reporter;
-import org.testng.annotations.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class Basics {
