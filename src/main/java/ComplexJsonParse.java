@@ -17,10 +17,13 @@ public class ComplexJsonParse {
         String zaibal = jsonPath.getString("courses[0].title");
         System.out.println(zaibal);
 
-        //Display all courses
+        //Display all courses and price
         for (int i = 0; i < count; i++) {
             String coursesTitle = jsonPath.getJsonObject("courses[" + i + "].title");
+            System.out.println(jsonPath.get("courses[" + i + "].price").toString());
             System.out.println(coursesTitle);
         }
+        //Print no of copies sold by RPA courses
+
     }
 }
