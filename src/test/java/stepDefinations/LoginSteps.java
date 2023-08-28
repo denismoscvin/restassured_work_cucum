@@ -28,7 +28,7 @@ public class LoginSteps {
         driver.findElement(By.xpath("/html/body/app-root/div/kendo-drawer-container/kendo-drawer-content/div[2]/main/app-login/div/div/div/div/div/form/div[2]/input")).sendKeys("Aa963258741!@");
     }
 
-    @When("^clicks the \"Login\" button$")
+    @And("^clicks the \"Login\" button$")
     public void clicks_the_Login_button() {
         driver.findElement(By.xpath("/html/body/app-root/div/kendo-drawer-container/kendo-drawer-content/div[2]/main/app-login/div/div/div/div/div/form/div[4]/button")).click();
     }
