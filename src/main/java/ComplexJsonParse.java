@@ -23,6 +23,7 @@ public class ComplexJsonParse {
             System.out.println(coursesTitle);
         }
 
-        //
+        //Display price for RPA course
+
     }
 }
