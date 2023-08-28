@@ -1,5 +1,6 @@
 import files.payload;
 import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SumValidation {
@@ -21,6 +22,10 @@ public class SumValidation {
             sum = sum + amount;
         }
         System.out.println("Summ for all courses is " + sum);
+
+        int purchased = jsonPath.getInt("dashboard.purchaseAmount");
+
+        Assert.assertEquals(purchased, sum);
     }
 
 }
