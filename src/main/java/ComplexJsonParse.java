@@ -22,5 +22,7 @@ public class ComplexJsonParse {
             String coursesTitle = jsonPath.getJsonObject("courses[" + i + "].title");
             System.out.println(coursesTitle);
         }
+
+        //
     }
 }
